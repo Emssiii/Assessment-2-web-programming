@@ -1,0 +1,127 @@
+/* General layout reset */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: #f0f0f0;
+  scroll-behavior: smooth;
+}
+
+/* Wrapper for vertical layout */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #1c1c1c, #2a2a2a);
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 255, 231, 0.1);
+  border-bottom: 1px solid #00ffe7;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  color: #00ffe7;
+  text-shadow: 0 0 5px #00ffe7, 0 0 10px #00aaff;
+  margin-bottom: 1rem;
+}
+
+/* NAVIGATION */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: #00ffe7;
+  color: #0f0f0f;
+  box-shadow: 0 0 10px #00ffe7;
+}
+
+/* MAIN */
+main {
+  flex: 1;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #cccccc;
+}
+
+.featured h3 {
+  text-align: center;
+  color: #00ffe7;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 6px rgba(0, 255, 231, 0.4);
+}
+
+/* GAME BOX */
+.game-box {
+  background: linear-gradient(145deg, #1f1f1f, #292929);
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  border-radius: 16px;
+  max-width: 700px;
+  box-shadow: 0 0 20px rgba(0, 255, 231, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px rgba(0, 255, 231, 0.3);
+}
+
+.game-box video {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 1rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+/* FOOTER */
+footer {
+  background: linear-gradient(135deg, #1c1c1c, #2a2a2a);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #aaa;
+  border-top: 1px solid #00ffe7;
+}
+
+/* Optional extra touch: glowing border animation for hover */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #00ffe7;
+  }
+  50% {
+    box-shadow: 0 0 20px #00ffe7;
+  }
+  100% {
+    box-shadow: 0 0 5px #00ffe7;
+  }
+}
+
