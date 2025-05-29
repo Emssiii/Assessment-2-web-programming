@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery - Next Mc Gamers</title>
+  <link href="ment.css" rel="stylesheet" type="text/css">
+  <style>
+  @keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animate main title */
+header h1 {
+  animation: fadeInUp 1s ease-out;
+  color: #00ffe7;
+  text-shadow: 0 0 10px rgba(0, 255, 231, 0.4);
+}
+
+/* Animate section title and description */
+main h2, main p {
+  animation: fadeInUp 1.2s ease-out;
+  color: #00ffe7;
+}
+
+/* Animate each gallery item with a slight delay */
+.gallery-item {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+/* Optional: stagger effect */
+.gallery-item:nth-child(1) { animation-delay: 0.2s; }
+.gallery-item:nth-child(2) { animation-delay: 0.4s; }
+.gallery-item:nth-child(3) { animation-delay: 0.6s; }
+.gallery-item:nth-child(4) { animation-delay: 0.8s; }
+.gallery-item:nth-child(5) { animation-delay: 1s; }
+.gallery-item:nth-child(6) { animation-delay: 1.2s; }
+.gallery-item:nth-child(7) { animation-delay: 1.4s; }
+.gallery-item:nth-child(8) { animation-delay: 1.6s; }
+  
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .gallery-item {
+      background: #1f1f1f;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 255, 231, 0.15);
+      text-align: center;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 0.5rem;
+    }
+
+    .gallery-item h4 {
+      color: #00ffe7;
+      margin-bottom: 0.25rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Next Mc Gamers</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="trending.html">Trending Games</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="forums.html">Forums</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>🎮 Game Gallery</h2>
+      <p>Browse through epic screenshots and art from top trending games.</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="pal.jpg" alt="Palworld Scene">
+          <h4>Palworld</h4>
+          <p>Vibrant open world filled with battles and beast companions.</p>
+        </div>
+
+        <div class="gallery-item">
+          <img src="force.jpg" alt="Jump Force Fight">
+          <h4>Jump Force</h4>
+          <p>Your favorite anime heroes in cinematic showdowns.</p>
+        </div>
+
+        <div class="gallery-item">
+          <img src="tekken.jpg" alt="Tekken 8 Arena">
+          <h4>Tekken 8</h4>
+          <p>Dynamic duels in stunning high-fidelity fighting arenas.</p>
+        </div>
+
+        <div class="gallery-item">
+          <img src="decendant.jpg" alt="The First Descendant">
+          <h4>The First Descendant</h4>
+          <p>Explosive sci-fi action and cinematic co-op boss battles.</p>
+        </div>
+
+        <div class="gallery-item">
+          <img src="wukong.jpg" alt="Black Myth Wukong">
+          <h4>Black Myth: Wukong</h4>
+          <p>Legend meets modern visuals in this mythological epic.</p>
+        </div>
+		
+		<div class="gallery-item">
+          <img src="skyed.jpg" alt="Black Myth Wukong">
+          <h4>sky:Children of the light</h4>
+          <p>An emotional multiplayer adventure where connection and kindness shine brightest.</p>
+        </div>
+		
+		<div class="gallery-item">
+          <img src="leveling.jpg" alt="Black Myth Wukong">
+          <h4>solo leveling</h4>
+          <p>A stylish action RPG based on the hit webtoon.</p>
+        </div>
+		
+		<div class="gallery-item">
+          <img src="legends.jpg" alt="Black Myth Wukong">
+          <h4>Mobile Legends</h4>
+          <p>The iconic mobile MOBA.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Next Mc Gamers. Built by enthusiasts for gamers.</p>
+    </footer>
+  </div>
+</body>
+</html>

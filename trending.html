@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trending Games - Next Mc Gamers</title>
+  <link href="ment.css" rel="stylesheet" type="text/css">
+  <style>
+  @keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Animate main title */
+header h1 {
+  animation: fadeInUp 1s ease-out;
+  color: #00ffe7;
+  text-shadow: 0 0 10px rgba(0, 255, 231, 0.4);
+}
+
+/* Animate section title */
+main h2 {
+  animation: fadeInUp 1.2s ease-out;
+  color: #00ffe7;
+}
+
+/* Animate game titles */
+.trending-content h3 {
+  animation: fadeInUp 1.5s ease-out;
+}
+  
+    .trending-box {
+      display: flex;
+      flex-direction: row;
+      background: #1f1f1f;
+      border-radius: 12px;
+      margin: 1rem auto;
+      padding: 1rem;
+      max-width: 750px;
+      box-shadow: 0 0 10px rgba(0, 255, 231, 0.15);
+      gap: 1rem;
+    }
+
+    .trending-box img {
+      width: 150px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .trending-content {
+      flex: 1;
+    }
+
+    .trending-content h3 {
+      margin-top: 0;
+      color: #00ffe7;
+    }
+
+    .trending-content p {
+      margin: 0.4rem 0;
+    }
+
+    .rating {
+      color: gold;
+      font-size: 1.2rem;
+    }
+
+    .visit-link {
+      color: #00ffe7;
+      text-decoration: none;
+    }
+
+    .visit-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Next Mc Gamers</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="trending.html">Trending Games</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="forums.html">Forums</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>🔥 Trending Games</h2>
+      <p>Explore the top games taking over the charts this season:</p>
+
+      <div class="trending-box">
+        <img src="pal.jpg" alt="Palworld">
+        <div class="trending-content">
+          <h3>Palworld</h3>
+          <p>A wild creature-collecting survival game full of creativity and chaos.</p>
+          <p><strong>Genre:</strong> Open World / Survival</p>
+          <p class="rating">★★★★☆</p>
+          <a href="https://www.pocketpair.jp/palworld" class="visit-link" target="_blank">Visit Website</a>
+        </div>
+      </div>
+
+      <div class="trending-box">
+        <img src="force.jpg" alt="Jump Force">
+        <div class="trending-content">
+          <h3>Jump Force</h3>
+          <p>A crossover fighting game that brings your favorite anime heroes together in intense 3D battles.</p>
+          <p><strong>Genre:</strong> Fighting / Anime / 3D Arena</p>
+          <p class="rating">★★★☆☆</p>
+          <a href="https://www.bandainamcoent.com/games/jump-force" class="visit-link" target="_blank">Visit Website</a>
+        </div>
+      </div>
+
+      <div class="trending-box">
+        <img src="tekken.jpg" alt="Tekken 8">
+        <div class="trending-content">
+          <h3>Tekken 8</h3>
+          <p>The latest chapter in the legendary fighting game series featuring ultra-realistic visuals and brutal combos.</p>
+          <p><strong>Genre:</strong> Fighting / eSports</p>
+          <p class="rating">★★★★★</p>
+          <a href="https://tekken.com/" class="visit-link" target="_blank">Visit Website</a>
+        </div>
+      </div>
+
+      <div class="trending-box">
+        <img src="decendant.jpg" alt="The First Descendant">
+        <div class="trending-content">
+          <h3>The First Descendant</h3>
+          <p>Next-gen looter shooter with co-op chaos and stunning visuals.</p>
+          <p><strong>Genre:</strong> Co-op Shooter</p>
+          <p class="rating">★★★☆☆</p>
+          <a href="https://www.thefirstdescendant.com/" class="visit-link" target="_blank">Visit Website</a>
+        </div>
+      </div>
+
+      <div class="trending-box">
+        <img src="wukong.jpg" alt="Black Myth Wukong">
+        <div class="trending-content">
+          <h3>Black Myth: Wukong</h3>
+          <p>An epic Chinese mythology action RPG with Soulslike combat.</p>
+          <p><strong>Genre:</strong> Action / Mythology</p>
+          <p class="rating">★★★★☆</p>
+          <a href="https://www.heishenhua.com/" class="visit-link" target="_blank">Visit Website</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Next Mc Gamers. Built by enthusiasts for gamers.</p>
+    </footer>
+  </div>
+</body>
+</html>

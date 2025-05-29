@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Next Mc Gamers</title>
+  <link href="ment.css" rel="stylesheet" type="text/css">
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .game-box p {
+      margin: 0.5rem 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1 class="fade-in">Next Mc Gamers</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="trending.html">Trending Games</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="forums.html">Forums</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro fade-in">
+        <h2>Level Up Your Gaming Experience</h2>
+        <p>Discover what's hot in gaming, share your opinions, and explore epic game visuals!</p>
+      </section>
+
+      <section class="featured">
+        <h3 class="fade-in">Top Picks</h3>
+
+        <div class="game-box fade-in">
+          <h4>Final Fantasy VII Rebirth</h4>
+          <p>A legendary RPG reimagined for the modern era.</p>
+          <video controls poster="fantasy.jpg">
+            <source src="final.mp4" type="video/mp4" />
+          </video>
+          <p><strong>Reviews:</strong> 4.9/5 — a masterful blend of nostalgia and innovation.</p>
+          <p><strong>Impact:</strong> Rekindled the legacy of one of the most iconic RPGs ever made.</p>
+        </div>
+
+        <div class="game-box fade-in">
+          <h4>Honkai: Star Rail</h4>
+          <p>Turn-based strategy meets stunning anime art and galactic storytelling.</p>
+          <video controls poster="star.jpg">
+            <source src="honkai.mp4" type="video/mp4" />
+          </video>
+          <p><strong>Reviews:</strong> 4.7/5 — lauded for its worldbuilding and polish.</p>
+          <p><strong>Impact:</strong> Elevated mobile turn-based combat with a deep sci-fi narrative.</p>
+        </div>
+
+        <div class="game-box fade-in">
+          <h4>Solo Leveling: ARISE</h4>
+          <p>A stylish action RPG based on the hit webtoon. Slash through dungeons as Jinwoo!</p>
+          <video controls poster="leveling.jpg">
+            <source src="solo leveling.mp4" type="video/mp4">
+          </video>
+          <p><strong>Reviews:</strong> 4.6/5 — praised for its visuals and combat mechanics.</p>
+          <p><strong>Impact:</strong> Expanded the Solo Leveling universe and drew global fans into RPG gameplay.</p>
+        </div>
+
+        <div class="game-box fade-in">
+          <h4>Mobile Legends: Bang Bang</h4>
+          <p>The iconic mobile MOBA. Team up, pick your hero, and dominate the battlefield.</p>
+          <video controls poster="legends.jpg">
+            <source src="mlbb.mp4" type="video/mp4">
+          </video>
+          <p><strong>Reviews:</strong> 4.5/5 — widely popular with a strong esports presence.</p>
+          <p><strong>Impact:</strong> One of the most played mobile MOBAs in Southeast Asia and a competitive gaming staple.</p>
+        </div>
+
+        <div class="game-box fade-in">
+          <h4>Sky: Children of the Light</h4>
+          <p>An emotional multiplayer adventure where connection and kindness shine brightest.</p>
+          <video controls poster="skyed.jpg">
+            <source src="sky.mp4" type="video/mp4">
+          </video>
+          <p><strong>Reviews:</strong> 4.8/5 — loved for its peaceful visuals and meaningful social mechanics.</p>
+          <p><strong>Impact:</strong> Redefined multiplayer experiences with emotional storytelling and community-driven gameplay.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Next Mc Gamers. Built by enthusiasts for gamers.</p>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll('.fade-in').forEach((el, i) => {
+        setTimeout(() => {
+          el.classList.add('show');
+        }, i * 200);
+      });
+    });
+  </script>
+</body>
+</html>

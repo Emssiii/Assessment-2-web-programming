@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About - Next Gen Gamers</title>
+  <link href="ment.css" rel="stylesheet" type="text/css">
+  <style>
+  @keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-section p {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.about-section p.visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInUp 0.6s ease-out;
+}
+  
+    .about-section {
+      max-width: 750px;
+      margin: 2rem auto;
+      background: #1f1f1f;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 255, 231, 0.15);
+      line-height: 1.6;
+    }
+
+    .about-section h2 {
+      color: #00ffe7;
+      margin-bottom: 1rem;
+    }
+
+    .about-section p {
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Next Mc Gamers</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="trending.html">Trending Games</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="forums.html">Forums</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="about-section">
+        <h2>About Us</h2>
+        <p><strong>Next Mc Gamers</strong> is a community-driven platform created by passionate gamers for passionate gamers.</p>
+
+        <p>We feature trending titles, highlight iconic artwork, and create spaces for fans to discuss everything from competitive strategy to childhood nostalgia.</p>
+
+        <p>Whether you’re into AAA shooters, stylish anime brawlers, or cozy indie adventures — you’ll find a home here.</p>
+
+        <p>This site was built using HTML5, CSS3, and JavaScript, combining modern responsive design with an appreciation for game culture.</p>
+
+        <p>Thank you for being part of our journey. Game on!</p>
+      </div>
+    </main>
+	<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target); // Animate once
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.about-section p').forEach(p => {
+    observer.observe(p);
+  });
+</script>
+
+    <footer>
+      <p>&copy; 2025 Next Mc Gamers. Built by enthusiasts for gamers.</p>
+    </footer>
+  </div>
+</body>
+</html>
